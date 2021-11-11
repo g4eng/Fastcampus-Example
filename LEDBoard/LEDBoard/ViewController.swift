@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, LEDBoardSettingDelegate {
+class ViewController: UIViewController {
 
   @IBOutlet weak var contentsLabel: UILabel!
 
@@ -24,14 +24,14 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
       settingViewController.backgroudColor = self.view.backgroundColor ?? .black
     }
   }
-
-  func changedSetting(text: String?, textColor: UIColor, backgroudColor: UIColor) {
-    if let text = text {
-      self.contentsLabel.text = text
-    }
-    self.contentsLabel.textColor = textColor
-    self.view.backgroundColor = backgroudColor
-  }
 }
 
-
+extension ViewController: LEDBoardSettingDelegate {
+    func changedSetting(text: String?, textColor: UIColor, backgroudColor: UIColor) {
+      if let text = text {
+        self.contentsLabel.text = text
+      }
+      self.contentsLabel.textColor = textColor
+      self.view.backgroundColor = backgroudColor
+    }
+}
