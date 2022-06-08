@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RxSwiftPractice
 //
-//  Created by Bo-Young PARK on 2021/08/24.
+//  Created by gaeng on 2022/06/09.
 //
 
 import UIKit

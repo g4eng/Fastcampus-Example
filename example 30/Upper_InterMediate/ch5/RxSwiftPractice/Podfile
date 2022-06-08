@@ -6,6 +6,16 @@ target 'RxSwiftPractice' do
   use_frameworks!
 
   # Pods for RxSwiftPractice
-  pod 'RxSwift', '6.2.0'
+    pod 'RxSwift', '6.5.0'
+    pod 'RxCocoa', '6.5.0'
+
+  target 'RxSwiftPracticeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RxSwiftPracticeUITests' do
+    # Pods for testing
+  end
 
 end
