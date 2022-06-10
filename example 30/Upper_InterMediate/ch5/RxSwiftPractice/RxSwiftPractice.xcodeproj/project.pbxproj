@@ -63,6 +63,7 @@
 		F0F11AF92850FB0400571EA2 /* RxSwiftPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0F11B062850FC8D00571EA2 /* Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F0F11B072851055400571EA2 /* Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Traits.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F0F11B162852CFA800571EA2 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 			children = (
 				F0F11B062850FC8D00571EA2 /* Observable.playground */,
 				F0F11B072851055400571EA2 /* Traits.playground */,
+				F0F11B162852CFA800571EA2 /* Subject.playground */,
 				F0F11AD52850FB0200571EA2 /* RxSwiftPractice */,
 				F0F11AEC2850FB0300571EA2 /* RxSwiftPracticeTests */,
 				F0F11AF62850FB0400571EA2 /* RxSwiftPracticeUITests */,

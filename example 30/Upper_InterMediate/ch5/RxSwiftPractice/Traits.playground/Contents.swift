@@ -150,11 +150,7 @@ Completable.create { observer -> Disposable in
     observer(.completed)
     return Disposables.create()
 }
-.subscribe(onCompleted: {
+.subscribe {
     print("completed")
-}, onError: {
-    print("error: \($0)")
-}, onDisposed: {
-    print("disposed")
-})
+}
 .disposed(by: disposeBag)
