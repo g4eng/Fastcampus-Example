@@ -49,6 +49,7 @@
 		D1BB3B1780CD257419FA9C1B /* Pods_RxSwiftPractice_RxSwiftPracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPractice_RxSwiftPracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA32339E4714937F59040F15 /* Pods-RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		F019B7902858D070002DFA84 /* FilteringOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F01E94B4285A17340092748D /* TransformingOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F0F11AD32850FB0200571EA2 /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0F11AD62850FB0200571EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0F11AD82850FB0200571EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				F0F11B072851055400571EA2 /* Traits.playground */,
 				F0F11B162852CFA800571EA2 /* Subject.playground */,
 				F019B7902858D070002DFA84 /* FilteringOperator.playground */,
+				F01E94B4285A17340092748D /* TransformingOperator.playground */,
 				F0F11AD52850FB0200571EA2 /* RxSwiftPractice */,
 				F0F11AEC2850FB0300571EA2 /* RxSwiftPracticeTests */,
 				F0F11AF62850FB0400571EA2 /* RxSwiftPracticeUITests */,
