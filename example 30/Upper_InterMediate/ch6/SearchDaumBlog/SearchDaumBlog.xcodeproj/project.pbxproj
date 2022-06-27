@@ -23,6 +23,9 @@
 		F0EA30A8286601B7007BB1F7 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30A7286601B7007BB1F7 /* BlogListCell.swift */; };
 		F0EA30AA286601BE007BB1F7 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30A9286601BE007BB1F7 /* BlogListCellData.swift */; };
 		F0EA30B42866059F007BB1F7 /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30B32866059F007BB1F7 /* AlertActionConvertible.swift */; };
+		F0EA30BB2869D32F007BB1F7 /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30BA2869D32F007BB1F7 /* DKBlog.swift */; };
+		F0EA30BD2869D498007BB1F7 /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30BC2869D498007BB1F7 /* SearchBlogAPI.swift */; };
+		F0EA30C02869E8C6007BB1F7 /* SerachBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EA30BF2869E8C6007BB1F7 /* SerachBlogNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		F0EA30A7286601B7007BB1F7 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		F0EA30A9286601BE007BB1F7 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 		F0EA30B32866059F007BB1F7 /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
+		F0EA30BA2869D32F007BB1F7 /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
+		F0EA30BC2869D498007BB1F7 /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		F0EA30BF2869E8C6007BB1F7 /* SerachBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerachBlogNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 				F0EA307E2865FC6E007BB1F7 /* AppDelegate.swift */,
 				F0EA30802865FC6E007BB1F7 /* SceneDelegate.swift */,
 				F0EA30AD286601DD007BB1F7 /* Entities */,
+				F0EA30BE2869D4AC007BB1F7 /* Network */,
 				F0EA30AC286601D4007BB1F7 /* Presentation */,
 				F0EA30872865FC70007BB1F7 /* Assets.xcassets */,
 				F0EA30892865FC70007BB1F7 /* LaunchScreen.storyboard */,
@@ -100,6 +107,7 @@
 			children = (
 				F0EA30A9286601BE007BB1F7 /* BlogListCellData.swift */,
 				F0EA30B32866059F007BB1F7 /* AlertActionConvertible.swift */,
+				F0EA30BA2869D32F007BB1F7 /* DKBlog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -146,6 +154,15 @@
 				F0EA30A7286601B7007BB1F7 /* BlogListCell.swift */,
 			);
 			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		F0EA30BE2869D4AC007BB1F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F0EA30BC2869D498007BB1F7 /* SearchBlogAPI.swift */,
+				F0EA30BF2869E8C6007BB1F7 /* SerachBlogNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +249,10 @@
 			files = (
 				F0EA30A02865FD33007BB1F7 /* MainViewController.swift in Sources */,
 				F0EA30A8286601B7007BB1F7 /* BlogListCell.swift in Sources */,
+				F0EA30C02869E8C6007BB1F7 /* SerachBlogNetwork.swift in Sources */,
+				F0EA30BB2869D32F007BB1F7 /* DKBlog.swift in Sources */,
 				F0EA30A6286601A9007BB1F7 /* BlogListView.swift in Sources */,
+				F0EA30BD2869D498007BB1F7 /* SearchBlogAPI.swift in Sources */,
 				F0EA30AA286601BE007BB1F7 /* BlogListCellData.swift in Sources */,
 				F0EA30A22865FDF3007BB1F7 /* SearchBar.swift in Sources */,
 				F0EA307F2865FC6E007BB1F7 /* AppDelegate.swift in Sources */,

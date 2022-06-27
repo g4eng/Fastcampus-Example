@@ -7,7 +7,6 @@
 
 import UIKit
 import RxSwift
-import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController {
@@ -38,7 +37,13 @@ class MainViewController: UIViewController {
             }
         
         alertSheetForSorting
-            .asSignal()
+            .asSignal(onErrorSignalWith: .empty())
+            .flatMapLatest { alert -> Signal<AlertAction> in
+                let alertController = UIAlertController(title: alert.title, message: alert.message, preferredStyle: alert.style)
+                return self.presentAlertController(alertController, actions: alert.actions)
+            }
+            .emit(to: alertActionTapped)
+            .disposed(by: disposeBag)
     }
     
     private func setAttribute() {
@@ -65,8 +70,8 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController {
-    typealias Alert = (title: String?, message: String?, action: [AlertAction], style: UIAlertController.Style)
-    
+    typealias Alert = (title: String?, message: String?, actions: [AlertAction], style: UIAlertController.Style)
+
     enum AlertAction: AlertActionConvertible {
         case title, datetime, cancel
         case confirm
@@ -97,21 +102,25 @@ extension MainViewController {
     func presentAlertController<Action: AlertActionConvertible>(_ alertController: UIAlertController, actions: [Action]) -> Signal<Action> {
         if actions.isEmpty { return .empty() }
         return Observable
-            .create { [weak self] observer in
-                guard let self = self else { return Disposables.create() }
+            .create { [unowned self] observer in
                 for action in actions {
                     alertController.addAction(
-                        UIAlertAction(title: action.title, style: action.style, handler: { _ in
-                            observer.onNext(action)
-                            observer.onCompleted()
-                        })
+                        UIAlertAction(
+                            title: action.title,
+                            style: action.style,
+                            handler: { _ in
+                                observer.onNext(action)
+                                observer.onCompleted()
+                            }
+                        )
                     )
                 }
                 self.present(alertController, animated: true, completion: nil)
+                
                 return Disposables.create {
                     alertController.dismiss(animated: true, completion: nil)
                 }
             }
             .asSignal(onErrorSignalWith: .empty())
-    }
+        }
 }
