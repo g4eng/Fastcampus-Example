@@ -24,10 +24,10 @@ struct DKDocument: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let title = try container.decode(String?.self, forKey: .title)
-        let name = try container.decode(String?.self, forKey: .name)
-        let thumbnail = try container.decode(String?.self, forKey: .thumbnail)
-        let datetime = Date.parse(values, key: .datetime)
+        self.title = try container.decode(String?.self, forKey: .title)
+        self.name = try container.decode(String?.self, forKey: .name)
+        self.thumbnail = try container.decode(String?.self, forKey: .thumbnail)
+        self.datetime = Date.parse(container, key: .datetime)
     }
 }
 
